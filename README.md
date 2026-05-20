@@ -6,17 +6,37 @@ Perspective: British intelligence staff analyzing Argentine forces for planning 
 
 ## Main files
 
-- `index.html` - Google Maps MCOO editor/viewer. Requires internet and a Google Maps API key.
-- `data/ฐานข้อมูล_MCOO_ฟอล์กแลนด์_พิกัดจริง_IPOE_v1.xlsx` - MCOO coordinate database for points, routes, areas, symbology, and use cases.
+- `index.html` - Leaflet MCOO editor/viewer. No Google Maps API key is required.
+- `data/mcoo-data.json` - Excel-derived MCOO coordinate dataset for points, routes, areas, symbology, and use cases.
+- `data/ฐานข้อมูล_MCOO_ฟอล์กแลนด์_พิกัดจริง_IPOE_v1.xlsx` - source coordinate workbook.
 - `docs/` - version notes.
 
 ## Web features
 
-- Google Maps terrain / satellite / hybrid / roadmap modes
+- Map engine: Leaflet
+- Selectable base maps:
+  - OpenStreetMap
+  - Esri Satellite
+  - Esri Topographic
+  - OpenTopoMap
+- Right-side collapsible map tool panel
 - Zoom in / zoom out
 - Fit full Falkland Islands view
 - Fit MCOO operational overlays
-- MCOO points, routes, and areas loaded from the Excel-derived dataset
-- Editable markers, routes, and polygons
+- MCOO points, UK Axis routes, No Go / Slow Go / Go Corridor areas loaded from `data/mcoo-data.json`
+- Per-record checkboxes for showing or hiding each MCOO point, route, or area
+- Route display controls for line style and line weight
+- Editable object name, type, color, line style, line weight, and IPOE meaning
+- Add point, route, and area overlays in the browser
 - Save versions in browser localStorage
-- Export / import JSON
+- Export JSON for later reuse
+
+## Online link
+
+If GitHub Pages is enabled for this repository, open:
+
+https://ncsc8650.github.io/mcoo-falkland/
+
+## Notes
+
+Leaflet itself does not need a paid API key. The map still needs internet access to load external tile layers from OpenStreetMap, Esri, or OpenTopoMap.
