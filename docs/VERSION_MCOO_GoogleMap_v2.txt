@@ -1,0 +1,16 @@
+VERSION: v2
+FILE: index.html
+DATE: 2026-05-20
+PERSPECTIVE: British intelligence staff analyzing Argentine forces
+SOURCE: data/mcoo-data.json derived from local Excel MCOO database
+FEATURES:
+- Google Maps JavaScript API loader with API key input
+- Hybrid / satellite / terrain / roadmap views
+- Zoom in / zoom out
+- Fit full Falkland Islands / Malvinas view
+- Fit MCOO overlays
+- REST Countries center lookup: https://restcountries.com/v3.1/name/falkland
+- Editable markers, routes, and polygons
+- Save versions in browser localStorage
+- Export / import JSON
+REQUIREMENT: Internet connection and a valid Google Maps API key with Maps JavaScript API and billing enabled.
