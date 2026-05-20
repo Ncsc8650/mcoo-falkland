@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "title": "MCOO Falkland Islands / Malvinas 1982",
+    "perspective": "British intelligence staff analyzing Argentine forces",
+    "center": { "lat": -51.75, "lng": -59.0 },
+    "countryApi": "https://restcountries.com/v3.1/name/falkland"
+  },
+  "points": [
+    {"id":"P001","name":"San Carlos Water / Ajax Bay","type":"UK Landing","lat":-51.4900,"lng":-59.0170,"coord":"51°29'S 59°01'W","meaning":"British landing area and beachhead; sheltered water but vulnerable to Argentine air attack."},
+    {"id":"P002","name":"Port San Carlos","type":"UK Landing","lat":-51.3667,"lng":-58.9333,"coord":"51°22'S 58°56'W","meaning":"Northern landing and assembly area for UK forces."},
+    {"id":"P003","name":"Goose Green / Darwin","type":"ARG Position","lat":-51.8000,"lng":-58.9800,"coord":"51°48'S 58°58'W","meaning":"Argentine position and local airstrip; important southern flank objective."},
+    {"id":"P004","name":"Mount Kent","type":"Key Terrain","lat":-51.6344,"lng":-58.1064,"coord":"51°38'S 58°06'W","meaning":"High ground and observation point on approaches to Stanley."},
+    {"id":"P005","name":"Mount Longdon","type":"Key Terrain","lat":-51.6686,"lng":-57.9739,"coord":"51°40'07\"S 57°58'26\"W","meaning":"Argentine defensive high ground north-west of Stanley."},
+    {"id":"P006","name":"Wireless Ridge","type":"Key Terrain","lat":-51.6706,"lng":-57.9319,"coord":"51°40'14\"S 57°55'55\"W","meaning":"Argentine defensive ridge linking Mount Longdon to Stanley."},
+    {"id":"P007","name":"Mount Harriet","type":"Key Terrain","lat":-51.7342,"lng":-58.0244,"coord":"51°44'03\"S 58°01'28\"W","meaning":"Southern ridge line before Stanley."},
+    {"id":"P008","name":"Mount Tumbledown","type":"Key Terrain","lat":-51.7286,"lng":-57.9783,"coord":"51°43'43\"S 57°58'42\"W","meaning":"Critical southern defensive terrain guarding Stanley."},
+    {"id":"P009","name":"Mount William","type":"Key Terrain","lat":-51.7442,"lng":-57.9478,"coord":"51°44'39\"S 57°56'52\"W","meaning":"Key terrain paired with Tumbledown."},
+    {"id":"P010","name":"Sapper Hill","type":"Key Terrain","lat":-51.7050,"lng":-57.8800,"coord":"approx 51°42'S 57°53'W","meaning":"Final western defensive ground before Stanley."},
+    {"id":"P011","name":"Stanley / Port Stanley","type":"Objective","lat":-51.6978,"lng":-57.8508,"coord":"51°41'52\"S 57°51'03\"W","meaning":"Main objective; political, military, port, and administrative center."},
+    {"id":"P012","name":"Stanley Airport","type":"NAI/TAI","lat":-51.6900,"lng":-57.7600,"coord":"51°41'24\"S 57°45'36\"W","meaning":"Airfield, sustainment, and C2 infrastructure node."},
+    {"id":"P013","name":"Fitzroy / Bluff Cove","type":"Landing/Risk Area","lat":-51.7667,"lng":-58.9500,"coord":"51°46'S 58°57'W","meaning":"Southern landing and logistics risk area exposed to air attack."},
+    {"id":"P014","name":"Teal Inlet","type":"Route Node","lat":-51.5667,"lng":-58.4333,"coord":"approx 51°34'S 58°26'W","meaning":"Route node and assembly point on northern approach to Stanley."},
+    {"id":"P015","name":"Douglas Settlement","type":"Route Node","lat":-51.5167,"lng":-58.3833,"coord":"approx 51°31'S 58°23'W","meaning":"Route node toward Mount Kent and Two Sisters."}
+  ],
+  "routes": [
+    {"id":"R001","name":"AA-1 Port San Carlos - Mount Longdon - Stanley","type":"UK Axis","color":"#2563c7","path":[[-51.3667,-58.9333],[-51.3833,-58.6167],[-51.6344,-58.1064],[-51.6686,-57.9739],[-51.6706,-57.9319],[-51.6978,-57.8508]]},
+    {"id":"R002","name":"AA-2 Ajax Bay - Mount Harriet - Stanley","type":"UK Axis","color":"#2563c7","path":[[-51.4900,-59.0170],[-51.5500,-58.3670],[-51.7342,-58.0244],[-51.6978,-57.8508]]},
+    {"id":"R003","name":"AA-3 Fitzroy - Tumbledown - Stanley","type":"UK Axis","color":"#2563c7","path":[[-51.7667,-58.9500],[-51.7286,-57.9783],[-51.7442,-57.9478],[-51.6978,-57.8508]]},
+    {"id":"R004","name":"AA-4 San Carlos - Goose Green","type":"UK Axis","color":"#2563c7","path":[[-51.4900,-59.0170],[-51.6700,-59.1000],[-51.8000,-58.9800]]},
+    {"id":"R005","name":"ARG air threat corridor toward San Carlos","type":"ARG Threat","color":"#dc2626","path":[[-51.80,-67.75],[-51.70,-64.30],[-51.45,-61.20],[-51.49,-59.017]]}
+  ],
+  "areas": [
+    {"id":"A001","name":"Slow Go: peat bog / limited roads west-central East Falkland","type":"Slow Go","color":"#ffe52e","fillOpacity":0.38,"path":[[-51.43,-59.05],[-51.55,-58.75],[-51.64,-58.25],[-51.57,-58.05],[-51.37,-58.45]]},
+    {"id":"A002","name":"Slow Go: central East Falkland approaches to Stanley","type":"Slow Go","color":"#ffe52e","fillOpacity":0.38,"path":[[-51.66,-58.20],[-51.78,-58.10],[-51.76,-57.88],[-51.67,-57.88],[-51.60,-58.02]]},
+    {"id":"A003","name":"No Go: Stanley ridge defence / mine risk","type":"No Go","color":"#e33434","fillOpacity":0.42,"path":[[-51.66,-57.99],[-51.69,-57.89],[-51.74,-57.91],[-51.75,-58.04],[-51.71,-58.08]]},
+    {"id":"A004","name":"ARG Defense Ring around Stanley","type":"ARG Defense","color":"#e33434","fillOpacity":0.15,"path":[[-51.6686,-57.9739],[-51.6706,-57.9319],[-51.7342,-58.0244],[-51.7286,-57.9783],[-51.7442,-57.9478],[-51.7050,-57.8800]]},
+    {"id":"A005","name":"Go Corridor: San Carlos to Stanley","type":"Go Corridor","color":"#2fa05a","fillOpacity":0.22,"path":[[-51.49,-59.017],[-51.45,-58.70],[-51.50,-58.37],[-51.56,-58.11],[-51.64,-58.10],[-51.67,-57.97],[-51.70,-57.85]]}
+  ]
+}
