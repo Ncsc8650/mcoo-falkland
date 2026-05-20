@@ -1,0 +1,16 @@
+VERSION: MCOO Falklands Leaflet v3
+DATE: 2026-05-20
+PERSPECTIVE: British intelligence staff analyzing Argentine forces for Falklands 1982 IPOE/JIPOE
+
+Summary:
+- Replaced Google Maps dependency with Leaflet web map.
+- Google Maps API key is no longer required.
+- Added selectable base map layers: OpenStreetMap, Esri Satellite, Esri Topographic, and OpenTopoMap.
+- Moved all map tools into a collapsible right-side menu.
+- Loaded MCOO points, routes, and areas from the Excel-derived dataset at data/mcoo-data.json.
+- Added per-record checkboxes to show/hide each point, route, and area.
+- Added route style controls for line pattern and line weight.
+- Retained local browser version save/export functions for planning iterations.
+
+Operational use:
+This web map supports visual planning for MCOO and IPOE products related to the British operation to retake the Falkland Islands after the Argentine seizure on 2 April 1982. It is intended as a seminar support tool, not an authoritative navigational chart.
